@@ -16,7 +16,7 @@
     "webpack-cli": "^4.5.0"
   },
   "devDependencies": {
-    "qunit": "2.10.0",
+    "qunit": "2.25.0",
     "qunitjs": "1.23.1"
   }
 }
