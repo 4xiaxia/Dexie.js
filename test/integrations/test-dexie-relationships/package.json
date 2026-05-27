@@ -12,11 +12,11 @@
   "license": "ISC",
   "dependencies": {
     "dexie-relationships": "^1.2.11",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.5.0"
+    "webpack": "^5.107.2",
+    "webpack-cli": "^4.10.0"
   },
   "devDependencies": {
-    "qunit": "2.10.0",
+    "qunit": "2.25.0",
     "qunitjs": "1.23.1"
   }
 }
