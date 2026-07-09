@@ -1,0 +1,324 @@
+# Instincts generated from https://github.com/4xiaxia/Dexie.js
+# Generated: 2026-07-09T23:45:37.323Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Dexie.js-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/Dexie.js
+---
+
+# Dexie.js Commit Length
+
+## Action
+
+Write moderate-length commit messages (~64 characters)
+
+## Evidence
+
+- Average commit message length: 64 chars
+- Based on 1 commits
+
+---
+id: Dexie.js-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/Dexie.js
+---
+
+# Dexie.js Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: Dexie.js-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/Dexie.js
+---
+
+# Dexie.js Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Dexie.js-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/Dexie.js
+---
+
+# Dexie.js Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Dexie.js-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/Dexie.js
+---
+
+# Dexie.js Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: Dexie.js-workflow-update-npm-dependencies-multi-package
+trigger: "when doing update npm dependencies multi package"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/4xiaxia/Dexie.js
+---
+
+# Dexie.js Workflow Update Npm Dependencies Multi Package
+
+## Action
+
+Follow the update-npm-dependencies-multi-package workflow:
+1. Identify outdated dependencies in each package (using tools like npm outdated, pnpm, or dependabot).
+2. Update the version numbers in package.json files for each affected package.
+3. Regenerate lock files (package-lock.json, pnpm-lock.yaml) for each updated package.
+4. Commit all updated package.json and lock files together with a summary of changes.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: pnpm-lock.yaml, */package.json, */package-lock.json
+
+---
+id: dexie.js-instinct-file-naming
+trigger: "When creating a new file in the codebase"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/Dexie.js
+---
+
+# Dexie.js Instinct File Naming
+
+## Action
+
+Name the file using kebab-case (e.g., my-new-file.ts)
+
+## Evidence
+
+- Pattern in namingConventions.files: kebab-case
+
+---
+id: dexie.js-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/Dexie.js
+---
+
+# Dexie.js Instinct Function Naming
+
+## Action
+
+Name the function using camelCase (e.g., fetchData)
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: dexie.js-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/Dexie.js
+---
+
+# Dexie.js Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase (e.g., DataManager)
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: dexie.js-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/Dexie.js
+---
+
+# Dexie.js Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE (e.g., MAX_SIZE)
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: dexie.js-instinct-import-style
+trigger: "When importing modules within the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/Dexie.js
+---
+
+# Dexie.js Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: dexie.js-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 4xiaxia/Dexie.js
+---
+
+# Dexie.js Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: dexie.js-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: 4xiaxia/Dexie.js
+---
+
+# Dexie.js Instinct Test Location
+
+## Action
+
+Place test files in the separate 'test' directory
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+- Presence of 'test' folder
+
+---
+id: dexie.js-instinct-test-folder-naming
+trigger: "When organizing sample or example projects"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: 4xiaxia/Dexie.js
+---
+
+# Dexie.js Instinct Test Folder Naming
+
+## Action
+
+Place them in the 'samples' directory
+
+## Evidence
+
+- Pattern in architecture.folderStructure.commonFolders: samples
+
+---
+id: dexie.js-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: 4xiaxia/Dexie.js
+---
+
+# Dexie.js Instinct Commit Format
+
+## Action
+
+Use a freeform message, often starting with a summary of the main action (e.g., 'Bump the npm_and_yarn group across 4 directories with 17 updates')
+
+## Evidence
+
+- Pattern in commits.type: freeform
+- Example: 'Bump the npm_and_yarn group across 4 directories with 17 updates'
+
+---
+id: dexie.js-instinct-update-npm-dependencies
+trigger: "When updating third-party dependencies across multiple packages or samples"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: 4xiaxia/Dexie.js
+---
+
+# Dexie.js Instinct Update Npm Dependencies
+
+## Action
+
+Identify outdated dependencies, update package.json files, regenerate lock files, and commit all changes together with a summary
+
+## Evidence
+
+- Workflow: update-npm-dependencies-multi-package
+- Example commits and files: pnpm-lock.yaml, */package.json, */package-lock.json
+
